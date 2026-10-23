@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9f6f2">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="단편영화 《너와 듣던 계절》과 오리지널 사운드트랙을 감상해 보세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="너와 듣던 계절 | FILM & OST">
+  <meta property="og:description" content="하나의 계절, 두 가지 감상. 단편영화와 오리지널 사운드트랙 바로가기.">
+  <meta property="og:image" content="https://i.ytimg.com/vi/dMrctuLCtRk/hqdefault.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>너와 듣던 계절 | 작품 감상</title>
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23dfb8b4'/%3E%3Cpath d='M32 17c-5-7-13-1-10 6-8-2-12 7-5 12-6 7 1 14 8 10 0 9 11 11 14 2 9 5 15-5 8-11 8-4 4-14-5-13 0-8-7-11-10-6z' fill='%23fff8f3'/%3E%3Ccircle cx='32' cy='33' r='5' fill='%23e6bc63'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #343332;
+      --sub: #827c78;
+      --paper: #f9f6f2;
+      --rose: #d7ada9;
+      --accent: #a66e72;
+      --line: #eae4df;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { min-height: 100%; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-width: 280px;
+      min-height: 100dvh;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      position: fixed;
+      content: "";
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 4% 3%, rgba(242, 211, 210, .47), transparent 31%),
+        radial-gradient(circle at 99% 54%, rgba(232, 215, 197, .35), transparent 36%),
+        radial-gradient(circle at 12% 100%, rgba(234, 221, 216, .31), transparent 39%);
+    }
+    .page {
+      position: relative;
+      width: min(100%, 460px);
+      min-height: 100dvh;
+      margin-inline: auto;
+      padding: max(36px, env(safe-area-inset-top)) 22px max(28px, env(safe-area-inset-bottom));
+      display: flex;
+      flex-direction: column;
+    }
+    .hero { text-align: center; }
+    .hero-icon {
+      width: 65px;
+      height: 65px;
+      margin: 0 auto 17px;
+      display: grid;
+      place-items: center;
+      border-radius: 24px;
+      border: 1px solid rgba(211, 172, 168, .42);
+      background: linear-gradient(152deg,#fffaf5,#f4e6e4);
+      box-shadow: 0 5px 15px rgba(117, 78, 67, .065);
+    }
+    .hero-icon svg { width: 39px; height: 39px; }
+    .eyebrow {
+      color: #a18b83;
+      font-size: 10px;
+      font-weight: 750;
+      letter-spacing: .24em;
+      line-height: 1.5;
+    }
+    h1 {
+      margin: 7px 0 9px;
+      font-family: "Nanum Myeongjo", "AppleMyungjo", "Batang", "Noto Serif KR", serif;
+      font-size: clamp(29px, 8.4vw, 36px);
+      font-weight: 650;
+      letter-spacing: -.065em;
+      line-height: 1.42;
+      word-break: keep-all;
+    }
+    .description {
+      margin: 0;
+      font-size: 13px;
+      color: var(--sub);
+      line-height: 1.75;
+      letter-spacing: -.028em;
+      word-break: keep-all;
+    }
+    .mini-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 23px auto 17px;
+      color: #b5a5a0;
+    }
+    .mini-divider::before, .mini-divider::after {
+      display: block;
+      content: "";
+      height: 1px;
+      width: 33px;
+      background: #e5d9d4;
+    }
+    .links { display: grid; gap: 12px; }
+    a.video-card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 119px;
+      gap: 13px;
+      padding: 12px;
+      background: #fffefd;
+      border: 1px solid rgba(226, 218, 213, .97);
+      border-radius: 18px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 6px 21px rgba(72, 52, 46, .052);
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+      touch-action: manipulation;
+      overflow: hidden;
+    }
+    a.video-card:focus-visible { outline: 3px solid #b57782; outline-offset: 3px; }
+    @media (hover: hover) {
+      a.video-card:hover { transform: translateY(-3px); border-color: #d8b6b4; box-shadow: 0 10px 27px rgba(73, 44, 40, .095); }
+    }
+    a.video-card:active { transform: scale(.985); border-color: #c99293; }
+    .thumb {
+      position: relative;
+      flex: 0 0 43%;
+      max-width: 158px;
+      aspect-ratio: 16 / 10;
+      border-radius: 11px;
+      overflow: hidden;
+      isolation: isolate;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg,#e4c5c6 3%,#f2e0d1 45%,#d4c9bb 100%);
+    }
+    .thumb.ost { background: linear-gradient(135deg,#d9cdca,#a8aeb1 53%,#e2cdc2); }
+    .thumb::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: radial-gradient(circle at 24% 29%,#fff8eab0 0 12%,transparent 36%);
+    }
+    .thumb-img {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: transparent;
+      transition: transform .3s ease;
+    }
+    @media (hover: hover) { a.video-card:hover .thumb-img { transform: scale(1.045); } }
+    .thumb-art {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      height: 100%;
+      color: rgba(255,255,255,.76);
+    }
+    .thumb-art svg { width: 56px; height: 56px; }
+    .play {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgba(255,255,255,.67);
+      border-radius: 50%;
+      background: rgba(20, 17, 18, .37);
+      color: #fff;
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px);
+      box-shadow: 0 2px 9px #0002;
+    }
+    .play svg { width: 13px; height: 13px; margin-left: 2px; }
+    .info { min-width: 0; flex: 1; padding-right: 0; }
+    .tag {
+      display: inline-block;
+      margin-bottom: 7px;
+      color: var(--accent);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .05em;
+    }
+    .name {
+      display: block;
+      margin: 0;
+      font-weight: 750;
+      font-size: clamp(15px, 4vw, 17px);
+      letter-spacing: -.065em;
+      line-height: 1.45;
+      word-break: keep-all;
+    }
+    .subtitle {
+      display: block;
+      margin-top: 5px;
+      color: #89827e;
+      font-size: 11px;
+      font-weight: 450;
+      letter-spacing: -.04em;
+      line-height: 1.48;
+      word-break: keep-all;
+    }
+    .card-action {
+      display: inline-flex;
+      gap: 5px;
+      align-items: center;
+      margin-top: 8px;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    .card-action svg { width: 13px; height: 13px; }
+    .footer {
+      margin-top: auto;
+      padding-top: 29px;
+      text-align: center;
+      color: #ada19b;
+      font-size: 10px;
+      letter-spacing: .075em;
+      line-height: 1.65;
+    }
+    .footer p { margin: 0; }
+    @media (max-width: 360px) {
+      .page { padding-left: 15px; padding-right: 15px; }
+      .thumb { flex-basis: 40%; }
+      a.video-card { gap: 11px; }
+      .subtitle { font-size: 10.5px; }
+    }
+    @media (max-width: 320px) {
+      .thumb { flex-basis: 37%; }
+      .name { font-size: 14px; }
+    }
+    @media (min-height: 820px) and (max-width: 600px) {
+      .page { padding-top: max(55px, env(safe-area-inset-top)); }
+      .mini-divider { margin-top: 31px; margin-bottom: 22px; }
+      .links { gap: 15px; }
+      a.video-card { min-height: 132px; }
+      .footer { padding-top: 36px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 16.1c-4.1-7.7-11.6-5.4-11.1 1.1-7.8-1.9-10 6.3-4 9.4-5.4 5.9-.5 12.8 6.8 9.2 1 8.3 9.8 12 12.3 5.4 7.7 5.3 13-1.5 8.7-8.5 8.4-5.9-1.5-12.3-7.7-8.5Z" fill="#E6BFBE" stroke="#C89296" stroke-width=".8"/>
+          <path d="M24 21v10m-5-5h10" stroke="#FBF2E7" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="24" cy="26" r="4" fill="#EDC47A"/>
+          <path d="M26 7c2.7 3.4 3.7 5.5 3 8.5M35 34c3.4.6 5 2.4 5.8 4.9" stroke="#B8A79B" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="eyebrow">A SHORT FILM · ORIGINAL SOUNDTRACK</div>
+      <h1>너와 듣던 계절</h1>
+      <p class="description">그 계절의 이야기를 만나보세요.<br>보고 싶은 콘텐츠를 선택해 주세요.</p>
+    </header>
+
+    <div class="mini-divider" aria-hidden="true">
+      <svg viewBox="0 0 16 16" width="15" height="15" fill="none"><path d="M8 2.5v11M2.5 8h11M4 4l8 8m0-8-8 8" stroke="currentColor" stroke-width="1" stroke-linecap="round"/><circle cx="8" cy="8" r="1.7" fill="#DDADAC"/></svg>
+    </div>
+
+    <nav class="links" aria-label="영상 바로가기">
+      <a class="video-card" href="https://youtu.be/dMrctuLCtRk" aria-label="단편영화: 카메라 없이 프롬프트로만 만든 단편영화, 너와 듣던 계절. YouTube에서 보기">
+        <span class="thumb">
+          <span class="thumb-art" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width=".8" opacity=".5"/><path d="M32 14v36M14 32h36M19 19l26 26m0-26L19 45" stroke="currentColor" stroke-width="1.2" opacity=".7"/></svg>
+          </span>
+          <img class="thumb-img" src="https://i.ytimg.com/vi/dMrctuLCtRk/mqdefault.jpg" alt="너와 듣던 계절 단편영화 유튜브 썸네일" width="320" height="180" loading="eager" decoding="async" onerror="this.hidden=true" />
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5a1 1 0 0 1 1.5-.86l8.2 5.48a1 1 0 0 1 0 1.66l-8.2 5.48A1 1 0 0 1 4 13.42Z"/></svg></span>
+        </span>
+        <span class="info">
+          <span class="tag">01 / SHORT FILM</span>
+          <strong class="name">너와 듣던 계절</strong>
+          <span class="subtitle">카메라 없이 프롬프트로만 만든 단편영화</span>
+          <span class="card-action">YouTube에서 감상하기 <svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </span>
+      </a>
+
+      <a class="video-card" href="https://youtu.be/VgGoGRoMZzc" aria-label="너와 듣던 계절, Original Sound Track. YouTube에서 듣기">
+        <span class="thumb ost">
+          <span class="thumb-art" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width=".8" opacity=".6"/><circle cx="32" cy="32" r="7" stroke="currentColor" stroke-width="1.5"/><circle cx="32" cy="32" r="2" fill="currentColor"/><path d="M44 20a17 17 0 0 1 4 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <img class="thumb-img" src="https://i.ytimg.com/vi/VgGoGRoMZzc/mqdefault.jpg" alt="너와 듣던 계절 오리지널 사운드트랙 유튜브 썸네일" width="320" height="180" loading="eager" decoding="async" onerror="this.hidden=true" />
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5a1 1 0 0 1 1.5-.86l8.2 5.48a1 1 0 0 1 0 1.66l-8.2 5.48A1 1 0 0 1 4 13.42Z"/></svg></span>
+        </span>
+        <span class="info">
+          <span class="tag">02 / ORIGINAL SOUNDTRACK</span>
+          <strong class="name">너와 듣던 계절</strong>
+          <span class="subtitle">Original Sound Track</span>
+          <span class="card-action">YouTube에서 감상하기 <svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </span>
+      </a>
+    </nav>
+
+    <footer class="footer"><p>FILM & MUSIC · 너와 듣던 계절</p></footer>
+  </main>
+</body>
+</html>
